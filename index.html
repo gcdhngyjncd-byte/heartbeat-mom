@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#09030d">
+  <title>نبض أمي | من محمد ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="ambient"></div>
+  <div class="stars" id="stars"></div>
+
+  <!-- شاشة الدخول -->
+  <section class="intro" id="intro">
+    <div class="intro-orbit orbit-one"></div>
+    <div class="intro-orbit orbit-two"></div>
+    <div class="intro-content">
+      <div class="intro-heart">♥</div>
+      <p class="intro-small">A SPECIAL GIFT FROM MOHAMMED</p>
+      <h1>إلى أمي الحبيبة</h1>
+      <p class="intro-text">هناك قلب صنعته المحبة، وهناك أم لا يشبهها أحد...</p>
+      <button id="enterBtn" class="enter-btn">ابدئي رحلتج يا أمي <span>❤️</span></button>
+      <p class="intro-footer">اضغطي هنا حتى تكتشفين مفاجأتج</p>
+    </div>
+  </section>
+
+  <!-- الموقع الرئيسي -->
+  <div id="mainSite" class="main-site">
+
+    <header class="top">
+      <div class="brand">♥ نبض أمي</div>
+      <div class="online"><span></span> هدية من محمد</div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <p class="eyebrow">إلى أغلى إنسانة بحياتي</p>
+        <h1>أمي الحبيبة</h1>
+        <p class="subtitle">كل نبضة بگلبي تحچي عنج يمّه</p>
+
+        <div class="heart-stage">
+          <canvas id="heartCanvas"></canvas>
+          <div class="heart-caption">أحبج يمّه ❤️</div>
+        </div>
+
+        <p class="heart-hint">✨ المسّي القلب أو اسحبيه حتى يدور ✨</p>
+
+        <div class="activities">
+          <button id="pulseBtn" class="activity">
+            <span>💗</span> نبض القلب
+          </button>
+          <button id="fireBtn" class="activity">
+            <span>🎆</span> ألعاب نارية
+          </button>
+          <button id="roseBtn" class="activity">
+            <span>🌹</span> أمطري ورود
+          </button>
+        </div>
+
+        <div class="themes">
+          <span>اختاري لون القلب</span>
+          <button class="color pink" data-hue="330" aria-label="وردي"></button>
+          <button class="color purple" data-hue="275" aria-label="بنفسجي"></button>
+          <button class="color gold" data-hue="42" aria-label="ذهبي"></button>
+        </div>
+
+        <button id="letterBtn" class="letter-button">
+          <span class="letter-icon">💌</span>
+          <span>
+            <strong>رسالة من محمد</strong>
+            <small>رسالة خاصة لأغلى أم بالدنيا</small>
+          </span>
+          <span class="arrow">←</span>
+        </button>
+      </section>
+
+      <section class="love-note">
+        <div>∞</div>
+        <h2>أمي... أنتِ عالمي كله</h2>
+        <p>كل ما أكبر أعرف أكثر شكد تعبتي علمودي، وشكد وجودج نعمة ما تتعوض.</p>
+      </section>
+    </main>
+
+    <footer>صُنع بكل الحب من محمد إلى أمه ❤️</footer>
+  </div>
+
+  <!-- نافذة الرسالة -->
+  <section class="modal" id="letterModal">
+    <div class="modal-card">
+      <button class="close" id="closeModal">×</button>
+      <div class="envelope">💌</div>
+      <p class="eyebrow">A LETTER FROM MOHAMMED</p>
+      <h2>إلى أمي الحبيبة ❤️</h2>
+      <div class="letter-body" id="messageText"></div>
+      <div class="signature">ابنچ محمد، اللي يحبج هواية 🫶</div>
+    </div>
+  </section>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
